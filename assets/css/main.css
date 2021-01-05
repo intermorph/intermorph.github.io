@@ -27,6 +27,16 @@
   transition: transform 0.1s ease-out, filter 0.1s ease-out, box-shadow 0.1s ease-out;
 }
 
+@media screen and (max-width: 736px) {
+
+	#matrix {
+	  display: block;
+	  max-width: 100%;
+	  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.9), 0px 0px 8px 4px rgba(0, 0, 0, 0.5);
+	}
+
+}
+
 body.hasHover #matrix:hover{	
 	transform: scale(1.04);
 	filter: invert(100%);
@@ -44,6 +54,17 @@ body.hasHover #matrix:hover{
   -ms-transform: translateZ(0), scale(1, 1);
   transform: translateZ(0), scale(1, 1);
   transition: transform 0.1s ease-out, background 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+@media screen and (max-width: 736px) {
+
+	#canvas1 {
+	  width: 100%;
+	  height: 100%;
+	  padding-bottom: 0%; 
+	  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.9), 0px 0px 8px 4px rgba(0, 0, 0, 0.5);
+	}
+
 }
 
 body.hasHover #canvas1:hover{
@@ -2459,6 +2480,14 @@ input, select, textarea {
 	.image.mainpage {
 			box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.9), 0px 0px 20px 8px rgba(0, 0, 0, 0.5);
 		}
+		
+	@media screen and (max-width: 736px) {
+
+		.image.mainpage {
+			box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.9), 0px 0px 8px 4px rgba(0, 0, 0, 0.5);
+		}
+
+	}
 	
 		.image img {
 			border-radius: 4px;
@@ -2489,7 +2518,18 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
-			box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.4);
+			box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.4);
+		}
+		
+		@media screen and (max-width: 736px) {
+
+			.image.fit {
+				display: block;
+				margin: 0 0 2em 0;
+				width: 100%;
+				box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+			}	
+
 		}
 
 			.image.fit img {
@@ -2523,7 +2563,7 @@ input, select, textarea {
 
 				.image.main {
 					margin: 0 0 2em 0;
-				}
+				}		
 
 			}
 
