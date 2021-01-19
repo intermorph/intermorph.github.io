@@ -25,8 +25,8 @@ if (mobileCheck() == false){
 	var initMinSize = 2;
 	var initMaxSize = 8;
 	var initNumCircles = 225;
-	var initMinSpeed = -1;
-	var initMaxSpeed = 1;
+	var initMinSpeed = -0.00001;
+	var initMaxSpeed = 0.000001;
 	var initHeight = window.innerHeight;
 	var state = 0;
 
@@ -35,8 +35,8 @@ if (mobileCheck() == false){
 	var initMinSize = 1.5;
 	var initMaxSize = 6;
 	var initNumCircles = 120;
-	var initMinSpeed = -3;
-	var initMaxSpeed = 2;
+	var initMinSpeed = -1;
+	var initMaxSpeed = 1;
 	var initHeight = window.innerHeight;
 	var state = 0;
 	
