@@ -188,7 +188,7 @@ window.onload = function () {
     animate();
 	
 };
-
+/*
 window.onresize = function () {
 	
 	if (mobileCheck() == false){
@@ -245,7 +245,7 @@ canvas.onclick = function() {
 
 };
 
-/*
+
 canvas.onmouseover = function() {
 	
 	if (mobileCheck() == false){
