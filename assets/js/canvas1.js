@@ -25,8 +25,8 @@ if (mobileCheck() == false){
 	var initMinSize = 2;
 	var initMaxSize = 8;
 	var initNumCircles = 225;
-	var initMinSpeed = -0.00001;
-	var initMaxSpeed = 0.000001;
+	var initMinSpeed = -1;
+	var initMaxSpeed = 1;
 	var initHeight = window.innerHeight;
 	var state = 0;
 
@@ -189,6 +189,7 @@ window.onload = function () {
 	
 };
 
+/*
 window.onresize = function () {
 	
 	if (mobileCheck() == false){
@@ -207,6 +208,7 @@ window.onresize = function () {
 	}
 	
 };
+*/
 
 canvas.onclick = function() { 
 
@@ -217,15 +219,15 @@ canvas.onclick = function() {
 		
 		if (state == 0){
 			
-			minSpeed = initMinSpeed - 5;
-			maxSpeed = initMaxSpeed + 5;
+			minSpeed = initMinSpeed - 3;
+			maxSpeed = initMaxSpeed + 3;
 			//numCircles = initNumCircles - 40;
 			state = 1;
 		
 		} else if (state == 1) {
 			
-			minSpeed = initMinSpeed - 10;
-			maxSpeed = initMaxSpeed + 10;
+			minSpeed = initMinSpeed - 6;
+			maxSpeed = initMaxSpeed + 6;
 			//numCircles = initNumCircles - 80;
 			state = 2;
 			
