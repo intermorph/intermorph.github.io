@@ -25,8 +25,8 @@ if (mobileCheck() == false){
 	var initMinSize = 2;
 	var initMaxSize = 8;
 	var initNumCircles = 225;
-	var initMinSpeed = -4;
-	var initMaxSpeed = 2;
+	var initMinSpeed = -1;
+	var initMaxSpeed = 1;
 	var initHeight = window.innerHeight;
 	var state = 0;
 
@@ -217,15 +217,15 @@ canvas.onclick = function() {
 		
 		if (state == 0){
 			
-			minSpeed = initMinSpeed - 7;
-			maxSpeed = initMaxSpeed + 7;
+			minSpeed = initMinSpeed - 5;
+			maxSpeed = initMaxSpeed + 5;
 			//numCircles = initNumCircles - 40;
 			state = 1;
 		
 		} else if (state == 1) {
 			
-			minSpeed = initMinSpeed - 14;
-			maxSpeed = initMaxSpeed + 14;
+			minSpeed = initMinSpeed - 10;
+			maxSpeed = initMaxSpeed + 10;
 			//numCircles = initNumCircles - 80;
 			state = 2;
 			
