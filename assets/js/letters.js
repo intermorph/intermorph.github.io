@@ -40,9 +40,9 @@ window.addEventListener('touchmove', endAndStartTimer())
 var canvas = document.getElementById('matrix');
 var ctx = canvas.getContext('2d');
 if (mobileCheck() == false){
-	var initFontSize = 20;
+	var initFontSize = 19;
 } else{
-	var initFontSize = 13;
+	var initFontSize = 11;
 }
 var fontSize = initFontSize;
 var chars = generateChars(false);

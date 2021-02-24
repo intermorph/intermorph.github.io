@@ -17,8 +17,14 @@ window.mobileCheck = function() {
 
 var canvas = document.getElementById("canvas1");
 var context = canvas.getContext("2d");
-
 var xVal = 0;
+
+canvas.width = window.innerWidth;
+if (mobileCheck() == false){
+	canvas.height = window.innerHeight / 2;
+} else {
+	canvas.height = window.innerHeight / 3;
+}
 
 if (mobileCheck() == false){
 
@@ -32,9 +38,9 @@ if (mobileCheck() == false){
 
 } else {
 	
-	var initMinSize = 1.5;
-	var initMaxSize = 6;
-	var initNumCircles = 120;
+	var initMinSize = 1;
+	var initMaxSize = 4;
+	var initNumCircles = 90;
 	var initMinSpeed = -1;
 	var initMaxSpeed = 1;
 	var initHeight = window.innerHeight;
@@ -178,12 +184,6 @@ function animate() {
 window.onload = function () {
 	
     'use strict';
-    canvas.width = window.innerWidth;
-	if (mobileCheck() == false){
-		canvas.height = window.innerHeight / 2;
-	} else {
-		canvas.height = window.innerHeight / 3;
-	}
     buildArray();
     animate();
 	
