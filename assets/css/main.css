@@ -2483,6 +2483,19 @@ input, select, textarea {
 			box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.9), 0px 0px 16px 6px rgba(0, 0, 0, 0.5);
 		}
 		
+	.main_image_mobile {
+	
+		text-align:center; 
+		border: 1px solid #000000; 
+		border-radius: 5px; 
+		color: #000000; 
+		background-color: #ffffff; 
+		display: inline; 
+		padding-left:5px; 
+		padding-right:5px;
+			
+	}
+		
 	@media screen and (max-width: 736px) {
 
 		.image.mainpage {
