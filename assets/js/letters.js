@@ -40,9 +40,9 @@ window.addEventListener('touchmove', endAndStartTimer())
 var canvas = document.getElementById('matrix');
 var ctx = canvas.getContext('2d');
 if (mobileCheck() == false){
-	var initFontSize = 19;
+	var initFontSize = 15;
 } else{
-	var initFontSize = 11;
+	var initFontSize = 10;
 }
 var fontSize = initFontSize;
 var chars = generateChars(false);
@@ -62,9 +62,11 @@ function generateChars(kat) {
   
   // Get ALL half-width katakana characters by unicode value
   if (kat == true) {
+	  /*
 	  for (var i = 0; i <= 55; i++) {
 		chars += String.fromCharCode(i + 65382);
-	  }
+	  }*/
+	  chars = 'morph'
 	  char_mode = 'kat';
   } else {
 	  chars = '01';
@@ -122,7 +124,7 @@ function draw() {
 	
   // Set color and font of falling letters
   ctx.fillStyle = '#000000';
-  ctx.font = 'bold ' + fontSize + 'px monospace';
+  ctx.font = 'normal ' + fontSize + 'px monospace';
 
   var dropCount = drops.length;
   var charCount = chars.length;
@@ -154,7 +156,7 @@ function draw() {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 
 initCanvas();
-setInterval(draw, 45);
+setInterval(draw, 60);
 if (mobileCheck() == false){
 	canvas.onclick = function() { if (char_mode == 'bin') {chars = generateChars(true);} else {chars = generateChars(false);} };
 }

@@ -1,0 +1,2 @@
+thumbnails must be 800x800 jpg at 80% quality!
+the 10 img collection must be 400x400 jpg from flickr!
