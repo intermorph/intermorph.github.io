@@ -3146,7 +3146,7 @@ input, select, textarea {
 				-ms-user-select: none;
 			}
 			
-				#header nav#nav-logo ul li a[href="index.html"] img {
+				#header nav#nav-logo ul li a img {
 					height: 2.5em;
 				}
 
@@ -3245,7 +3245,7 @@ input, select, textarea {
 					top: 0.85em;
 				}
 				
-					#header nav#nav-logo ul li a[href="index.html"] img {
+					#header nav#nav-logo ul li a img {
 						height: 2.0em;
 					}	
 
