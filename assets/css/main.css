@@ -3167,7 +3167,7 @@ input, select, textarea {
 		
 			#header nav#nav-logo {
 				position: fixed;
-				left: 2.8em;
+				left: 2.65em;
 				top: 3.0em;
 				right: auto;
 				z-index: 10000;
@@ -3277,7 +3277,7 @@ input, select, textarea {
 				}
 				
 				#header nav#nav-logo {
-					left: 1.4em;
+					left: 1.28em;
 					top: 1.9em;
 				}
 				
