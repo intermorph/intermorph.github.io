@@ -40,9 +40,9 @@ window.addEventListener('touchmove', endAndStartTimer())
 var canvas = document.getElementById('matrix');
 var ctx = canvas.getContext('2d');
 if (mobileCheck() == false){
-	var initFontSize = 15;
+	var initFontSize = 13;
 } else{
-	var initFontSize = 10;
+	var initFontSize = 8;
 }
 var fontSize = initFontSize;
 var chars = generateChars(false);
@@ -85,9 +85,9 @@ function initCanvas() {
   if (mobileCheck() == false){
 	canvas.height = window.innerHeight/2;
   } else {
-	canvas.height = window.innerHeight/3; 
+	canvas.height = window.innerHeight/5; 
   }
-
+  
   columns = Math.round(canvas.width / fontSize);
   drops = [];
 

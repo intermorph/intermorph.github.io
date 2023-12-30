@@ -23,7 +23,7 @@ canvas.width = window.innerWidth;
 if (mobileCheck() == false){
 	canvas.height = window.innerHeight / 2;
 } else {
-	canvas.height = window.innerHeight / 3;
+	canvas.height = window.innerHeight / 4;
 }
 
 if (mobileCheck() == false){
